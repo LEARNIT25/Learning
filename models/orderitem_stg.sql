@@ -1,9 +1,15 @@
+with orderitems as (
+
 select
-orderitemid,
-orderid,
-productid,
-quantity,
-unitprice,
+456 orderitemid,
+12345 orderid,
+001 productid,
+100 quantity,
+100 unitprice,
 quantity*unitprice as totalprice,
-Updated_at
-from orderitems
+current_date as Updated_at
+
+)
+
+
+select * from orderitems

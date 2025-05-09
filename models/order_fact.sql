@@ -1,10 +1,12 @@
+with order_fact as (
+
 select
 o.orderid,
 o.orderdate,
 o.customerid,
 o.employeeid,
 o.storeid,
-o.statuscode,
+o.status,
 o.statusdesc,
 o.Updated_at,
 count(distinct o.orderid) as ordercount,
@@ -22,6 +24,10 @@ o.orderdate,
 o.customerid,
 o.employeeid,
 o.storeid,
-o.statuscode,
+o.status,
 o.statusdesc,
 o.Updated_at
+
+)
+
+select * from order_fact
