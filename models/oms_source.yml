@@ -1,0 +1,11 @@
+sources:
+  - name: lending
+    database: PROJECT1
+    schema: P1_RAW_L2_PROCESSING
+    tables:
+      - name: cust
+        identifier: customer_stg
+      - name: ord
+        identifier: order_stg
+      - name: orditm
+        identifier: orderitem_stg
