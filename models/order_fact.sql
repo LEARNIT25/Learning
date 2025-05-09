@@ -1,5 +1,3 @@
-with order_fact as (
-
 select
 o.orderid,
 o.orderdate,
@@ -27,7 +25,3 @@ o.storeid,
 o.status,
 o.statusdesc,
 o.Updated_at
-
-)
-
-select * from order_fact

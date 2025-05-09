@@ -38,17 +38,24 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   cust_ord_mgt:
     customer_stg:
-      schema: L2_PROCESSING
+      schema: P1_RAW_L2_PROCESSING
     order_stg:
-      schema: L2_PROCESSING
+      schema: P1_RAW_L2_PROCESSING
     orderitem_stg:
-      schema: L2_PROCESSING
+      schema: P1_RAW_L2_PROCESSING
     order_fact:
-      schema: L2_PROCESSING
+      schema: P1_RAW_L2_PROCESSING
       materialized: table
     customer_revenue:
-      schema: L3_CONSUMPTION
+      schema: P1_RAW_L3_CONSUMPTION
       materialized: table
+    storeperformance:
+      schema: P1_RAW_L3_CONSUMPTION
+      materialized: table
+
+seeds:
+  qtr_target:
+    schema: P1_RAW_L3_CONSUMPTION
       
           
           

@@ -1,5 +1,3 @@
-with customer_revenue as (
-
 select
 os.customerid,
 c.CustomerName,
@@ -13,7 +11,3 @@ on os.customerid = c.customerid
 group by
 os.customerid,
 c.CustomerName
-
-)
-
-select * from customer_revenue
